@@ -35,7 +35,7 @@ def set_response_headers(response):
 
 
 # main flow of programme
-@app.route('/neural_style/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def upload_file():
     try:
         # remove older files

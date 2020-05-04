@@ -281,7 +281,7 @@ def style_transfer(cnn, content_image, style_image, image_size, style_size, cont
     #plt.imshow(deprocess(img.data.cpu()))
     unique_name = str(uuid.uuid4()) + ".png"
     result_path = "static/images/"+ unique_name
-    plt.imsave(result_path, im_convert(img.detach().cpu()))
+    plt.imsave(result_path, im_convert(img))
     return unique_name
     
 
